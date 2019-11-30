@@ -1,4 +1,9 @@
 *.jpg
 *.pts
+*.ptv
 *.png
 *.jpeg
+*.mat
+envFaced/*
+fddb/*
+*.xml
