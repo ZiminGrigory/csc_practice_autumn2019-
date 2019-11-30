@@ -1,0 +1,21 @@
+1) Starts with this one...:  https://github.com/experiencor/keras-yolo3 
+2) learned faces on one class from wider_DS see test1class... inside it there is wider2keras-yolov3.ipunb
+that prepares files for train in appropriate format
+2.1) output file is located in keras-yolo3/face_only_on_1_class.h5 
+2.1.1) model prediction results on fddb are saved in wider_DS/test1class folder (pics)
+
+3) lets try start on several classes see folder several classes inside wider_DS
+3.1) preparation is done by the same script as in '2)'
+3.2) learning is started 30okt2019 21:04 -- stopped at 8:32 8 november
+3.3) in the same dict 
+	$ python3.6 predict.py -c config_testSeveralClasses.json -i /tmp  -evfddb 1  
+3.4) copy to fddb/evaluation/output 
+3.5) source ../../envFDD/bin/activate (inside evaluation folder)
+3.6) run ./runEvaluate.pl
+
+4) downloaded tf version of DAN from  https://github.com/mariolew/Deep-Alignment-Network-tensorflow.git
+https://github.com/zjjMaiMai/Deep-Alignment-Network-A-convolutional-neural-network-for-robust-face-alignment.git
+4.1) the idea is to connect TF models after with each other (rather than rewrite original with keras and then do the same)
+4.2) there is python script mat -> pts
+4.3) only HELEN is selected with ~40k images
+4.4) python3 preprocessing.py --input_dir=/home/greg/dev/csc_practice_autumn2019/300W_HELEN/HELEN --output_dir=/home/greg/dev/csc_practice_autumn2019/300W_HELEN/HELEN_out --istrain=True --repeat=1 --img_size=112 --mirror_file=./Mirror68.txt (from DAN_V2)
