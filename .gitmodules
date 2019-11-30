@@ -1,0 +1,8 @@
+[submodule "keras-yolo3"]
+	path = keras-yolo3
+	url = https://github.com/ZiminGrigory/keras-yolo3.git
+	branch = dev
+[submodule "Deep-Alignment-Network-A-convolutional-neural-network-for-robust-face-alignment"]
+	path = dan_tf
+	url = https://github.com/ZiminGrigory/Deep-Alignment-Network-A-convolutional-neural-network-for-robust-face-alignment.git
+	branch = dev
