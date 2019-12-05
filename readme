@@ -34,8 +34,8 @@ https://github.com/zjjMaiMai/Deep-Alignment-Network-A-convolutional-neural-netwo
 
 HOW TO:
 0) clone, install submodules
-1) create venv
-2) pip3 install requirements.txt
+1) python3 -m venv venv; source venv/bin/activate  
+2) pip3 install -r requirements.txt
 3) cd dan_tf/DAN_V2; cat model.tar.gz.parta* | tar -xzv ; cd -
 4) ln keras-yolo3/face_testSeveralClasses.h5 face_testSeveralClasses.h5
 5) python3 MainCycle.py
